@@ -4,6 +4,7 @@
   "description": "",
   "main": "",
   "scripts": {
+    "start": "node app.js",
     "test": "jest --passWithNoTests"
   },
   "author": "AltCampus",
