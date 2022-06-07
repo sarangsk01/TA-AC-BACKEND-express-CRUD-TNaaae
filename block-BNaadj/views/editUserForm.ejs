@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container height">
+      <h1 class="center">Edit User Form</h1>
+      <p class="center">Please Edit the fields in Form</p>
+      <form action="/users/<%= user.id %>" method="post">
+        <input
+          class="input-field"
+          type="text"
+          name="name"
+          placeholder="Enter Your Name"
+          value="<%= user.name %>"
+        />
+        <input
+          class="input-field"
+          type="text"
+          name="email"
+          placeholder="Enter Your Email"
+          value="<%= user.email %>"
+        />
+        <input
+          class="input-field"
+          type="number"
+          name="age"
+          placeholder="Enter Your Age"
+          value="<%= user.age %>"
+        />
+        <input
+          class="input-field"
+          type="text"
+          name="address"
+          placeholder="Enter Your Address"
+          value="<%= user.address %>"
+        />
+        <input
+          class="input-field"
+          type="text"
+          name="bio"
+          placeholder="Enter Your Bio"
+          value="<%= user.bio %>"
+        />
+        <input
+          class="input-field"
+          type="text"
+          name="hobbies"
+          placeholder="Enter Your Hobbies"
+          value="<%= user.hobbies %>"
+        />
+        <input class="submit Update1" type="submit" value="Update User" />
+      </form>
+      <a href="/users/<%= user.id %>/delete">
+        <input class="submit Update2" type="submit" value="Delete User" />
+      </a>
+    </div>
+  </body>
+</html>
