@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="flex details">
+      <h3 class="center">User details page</h3>
+      <h4 class="name"><%= user.name %></h4>
+      <h4 class="email"><%= user.email %></h4>
+      <h4 class="age"><%= user.age %></h4>
+      <h4 class="age"><%= user.address %></h4>
+      <h4 class="bio"><%= user.bio %></h4>
+      <h4 class="age"><%= user.hobbies %></h4>
+      <a class="update" href="/users/<%= user.id %>/edit"> edit </a>
+      <a class="delete" href="/users/<%= user.id %>/delete"> delete </a>
+      <a class="update" href="/users"> back </a>
+    </div>
+  </body>
+</html>
